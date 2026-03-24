@@ -64,7 +64,7 @@ const cartReducer = (state, action) => {
   }
 };
 
-export const CartProvider = ({ children }) => {
+export default function CartProvider({ children }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
   // ✅ Load from localStorage
