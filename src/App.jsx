@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CartProvider } from "./context/CartContext";
 import { Toaster } from "react-hot-toast";
 import "./index.css";
 import Navbar from "./Component/Navbar";
@@ -13,6 +12,7 @@ import Checkout from "./Pages/Checkout";
 import Payment from "./Pages/Payment";
 import OrderSuccess from "./Pages/OrderSuccess";
 import Footer from "./Component/Footer";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
